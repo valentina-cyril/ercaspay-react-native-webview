@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
 
 ## **Contributions**
 
-<!-- Want to help improve this package? [Read how to contribute](https://github.com/just1and0/React-Native-Paystack-WebView/blob/main/CONTRIBUTING.md) and feel free to submit your PR! -->
+Want to help improve this package? [Read how to contribute](https://github.com/valentina-cyril/ercaspay-react-native-webview/tree/main/CONTRIBUTING.md) and feel free to submit your PR!
 
 ## **Licensing**
 

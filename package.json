@@ -1,11 +1,12 @@
 {
   "name": "ercaspay-react-native-webview",
-  "version": "1.1.8",
-  "description": "",
+  "version": "1.1.9",
   "main": "dist/ErcasPay.js",
   "types": "dist/ErcasPay.d.ts",
   "author": "Valentina Ikelie  <ikelievalentina@gmail.com>",
   "license": "MIT",
+  "description": "This package allows you to accept payment in your react native project using ercaspay ",
+  "homepage": "https://github.com/valentina-cyril/ercaspay-react-native-webview",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

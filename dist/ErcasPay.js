@@ -43,13 +43,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importStar(require("react"));
-// import { TouchableOpacity, , StyleSheet,Modal } from 'react-native';
 const react_native_1 = require("react-native");
 const react_native_webview_1 = require("react-native-webview");
-// interface MyButtonProps {
-//     title: string;
-//     onPress: () => void;
-// }
 function ErscasPay({ ercaspayKey = "", amount = 0, paymentReference = "", paymentMethods = "card", customerName = "", customerEmail = "", customerPhoneNumber, redirectUrl, description, currency = "NGN", feeBearer = "customer", metadata, onCancel, onSuccess, activityIndicatorColor = "FF6C37", modalProps }) {
     const [isLoading, setisLoading] = (0, react_1.useState)(true);
     const [showModal, setshowModal] = (0, react_1.useState)(false);
@@ -70,7 +65,6 @@ function ErscasPay({ ercaspayKey = "", amount = 0, paymentReference = "", paymen
             "metadata": metadata
         };
         try {
-            // console.log(authToken)
             var request = yield fetch("https://api.merchant.staging.ercaspay.com/api/v1/payment/initiate", {
                 method: "POST",
                 body: payload && JSON.stringify(payload),
@@ -80,9 +74,6 @@ function ErscasPay({ ercaspayKey = "", amount = 0, paymentReference = "", paymen
                     "Accept": "application/json",
                 },
             });
-            // const responseText = await request.text();  // Log as text before JSON parsing
-            // console.log("Raw response:", responseText);
-            const status = request.status;
             const data = yield request.json();
             console.log({ data });
             if (data.responseCode === "failed") {
@@ -96,9 +87,8 @@ function ErscasPay({ ercaspayKey = "", amount = 0, paymentReference = "", paymen
                 setshowModal(true);
                 setisLoading(false);
             }
-            // setCheckoutURL(data?.checkoutUrl)
             request = null;
-            return data;
+            return;
         }
         catch (e) {
             console.error(e);
@@ -174,15 +164,4 @@ function ErscasPay({ ercaspayKey = "", amount = 0, paymentReference = "", paymen
                     react_1.default.createElement(react_native_1.ActivityIndicator, { animating: isLoading, size: "large", color: activityIndicatorColor })))))));
 }
 ;
-const styles = react_native_1.StyleSheet.create({
-    button: {
-        padding: 10,
-        backgroundColor: '#007BFF',
-        borderRadius: 5,
-    },
-    text: {
-        color: '#FFFFFF',
-        fontSize: 16,
-    },
-});
 exports.default = ErscasPay;

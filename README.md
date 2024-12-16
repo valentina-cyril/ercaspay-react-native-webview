@@ -6,7 +6,8 @@
 
 This package lets you accept payments with Ercaspay in few minutes Just install, add your keys, and it handles the rest. This was created at Ercaspay Hackathon 2024 so you know you’re in good hands. 
 
- 
+ ![App Preview]( https://github.com/valentina-cyril/ercaspay-react-native-webview/raw/main/image.png "Screenshot of library in action")
+
 
 ### **Installation**
 
@@ -111,6 +112,6 @@ Want to help improve this package? [Read how to contribute](https://github.com/v
 
 
 
- 
+
 
 

@@ -1,0 +1,33 @@
+{
+  "name": "ercaspay-react-native-webview",
+  "version": "1.1.8",
+  "description": "",
+  "main": "dist/ErcasPay.js",
+  "types": "dist/ErcasPay.d.ts",
+  "author": "Valentina Ikelie  <ikelievalentina@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React Native",
+    "ios",
+    "android",
+    "payment",
+    "ercaspay"
+  ],
+  "dependencies": {
+    "react-native-webview": "*"
+  },
+  "peerDependencies": {
+    "expo": "^49.0.23",
+    "react": "^18.1.0",
+    "react-native": "^0.70.15",
+    "react-native-webview": "^13.12.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.16",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.7.2"
+  }
+}
